@@ -1,8 +1,8 @@
-import changeCounting from "./countings"
+import { changeCounting, showLoading } from "./countings"
 import { combineReducers } from "redux"
 
 const rootReducer = combineReducers({
-    changeCounting
+    changeCounting, showLoading
 })
 
 export default rootReducer;
