@@ -13,7 +13,7 @@ function App() {
           <a className="revcountings" title="Backword Counting"  onClick={ () => dispatch(reverseCounting()) }><span>Backword counting -</span></a>
           <input name="countings_input" type="text" className="countings_input" value={myState}></input>
           <a className="countings" title="countings" onClick={ () => dispatch(counting()) }><span>Counting +</span></a>
-          <a className="countings" title="countings" onClick={ () => countingAsync() }><span>Counting Async Saga</span></a>
+          <a className="countings" title="countings" onClick={ () => dispatch(countingAsync()) }><span>Counting Async Saga</span></a>
         </div>
   </div>
   );
